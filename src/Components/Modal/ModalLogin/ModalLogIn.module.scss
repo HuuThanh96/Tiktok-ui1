@@ -1,0 +1,18 @@
+.logInItem {
+    display: flex;
+    align-items: center;
+    width: 374px;
+    line-height: 42px;
+    padding: 0 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+}
+.logInTittle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.tittle {
+    color: rgb(22, 24, 35);
+    font-size: 1.5rem;
+}

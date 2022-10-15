@@ -1,0 +1,29 @@
+.Menu {
+}
+.menu-item {
+    display: flex;
+    line-height: 32px;
+    padding: 8px;
+    text-decoration: none;
+    color: rgba(22, 24, 35, 1);
+
+    &.active {
+        color: var(--primary);
+    }
+
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+        cursor: pointer;
+    }
+}
+
+.icon {
+}
+
+.menu-label {
+    margin-left: 8px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+}

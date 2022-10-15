@@ -1,0 +1,22 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: var(--default-layout-width);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.wrapper-sidebar {
+    width: 365px;
+    position: relative;
+}
+.content {
+    flex: 1;
+    max-width: 692px;
+}

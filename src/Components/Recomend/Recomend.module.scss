@@ -1,0 +1,123 @@
+.recomend {
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 24px 0;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.recomend-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+.recomend-container {
+    margin-left: 12px;
+    max-width: 624px;
+    line-height: 25px;
+}
+
+.wrapper-info {
+}
+
+.recomend-name {
+    font-family: SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+.recomend-status {
+    line-height: 22px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+
+.recomend-music {
+}
+.music-icon {
+    font-size: 12px;
+    margin-right: 5px;
+    color: var(--text-color);
+}
+
+.music-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.wrapper-video {
+    width: 280px;
+    margin-top: 12px;
+    display: flex;
+}
+.recomend-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-right: 20px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+.action {
+    min-width: 48px;
+    margin-top: 260px;
+}
+.wrapper-action {
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.action-btn {
+    width: 100%;
+    min-height: 48px;
+    border-radius: 50%;
+    border: none;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.wrapper-icon {
+}
+.action-icon {
+    font-size: 2.2rem;
+}
+.heart-count,
+.comment-count,
+.share-count {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 1.2rem;
+    line-height: 17px;
+    font-weight: 700;
+    margin-left: 12px;
+}
+
+.follow-btn {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.4rem;
+    background-color: white;
+    width: 88px;
+    height: 26px;
+    padding: 0 10px;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    position: absolute;
+    top: 45px;
+    right: 50px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(254, 44, 85, 0.06);
+    }
+}

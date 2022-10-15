@@ -1,0 +1,126 @@
+.suggested {
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
+    padding: 16px 0;
+}
+
+.suggested-tittle {
+    padding: 0 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(22, 24, 35, 0.75);
+}
+.account-item {
+    display: flex;
+    height: 48px;
+    padding: 8px;
+
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+        cursor: pointer;
+    }
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-top: 3px;
+    margin-right: 12px;
+    object-fit: cover;
+}
+
+.account-info {
+}
+.account-name {
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: rgb(22, 24, 35);
+}
+.name {
+    font-size: 1.2rem;
+    color: rgba(22, 24, 35, 0.75);
+    line-height: 15px;
+}
+
+.check {
+    margin-left: 2px;
+    margin-bottom: 2px;
+    color: #20d5ec;
+}
+.more-btn {
+    padding: 8px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fe2c55;
+    cursor: pointer;
+}
+
+.profile-container {
+    width: 320px;
+    padding: 20px;
+}
+
+.profile-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.profile-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.profile-body {
+}
+.profile-account-name {
+    color: rgb(22, 24, 35);
+    font-family: SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.profile-name {
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.profile-foodter {
+    display: flex;
+}
+
+.profile-followers {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 17px;
+    line-height: 20px;
+    margin-right: 12px;
+}
+
+.follower-count {
+    color: rgba(22, 24, 35, 1);
+    font-weight: 700;
+    margin-right: 6px;
+    font-size: 17px;
+    line-height: 20px;
+    margin-right: 6px;
+}
+
+.profile-likes {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 17px;
+    line-height: 20px;
+    margin-right: 12px;
+}
+.like-count {
+    color: rgba(22, 24, 35, 1);
+    font-weight: 700;
+    margin-right: 6px;
+    font-size: 17px;
+    line-height: 20px;
+}

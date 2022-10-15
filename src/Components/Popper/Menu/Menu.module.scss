@@ -1,0 +1,56 @@
+.content {
+    width: 224px;
+}
+
+//cap 1
+
+.menu-item {
+    background-color: #fff;
+    min-height: 42px;
+    border: none;
+    width: 100%;
+    display: flex;
+
+    &.separate {
+        border-top: 1px solid rgba(22, 24, 35, 0.12);
+    }
+}
+.menu-icon {
+    margin: 0 16px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-button {
+    background-color: #fff;
+    text-decoration: none;
+    border: none;
+    color: black;
+    font-size: 1.6rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+// cap2
+.menu-header {
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+}
+.back-btn {
+    background-color: white;
+    border: none;
+    margin: 0 20px;
+    position: relative;
+    font-size: 1.8rem;
+}
+.header-tittle {
+    position: absolute;
+    left: 75px;
+}
