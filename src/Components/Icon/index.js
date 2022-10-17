@@ -289,7 +289,7 @@ function TwitterIcon({ width = '2rem', height = '2rem', className }) {
     );
 }
 
-function lineIcon({ width = '2rem', height = '2rem', className }) {
+function LineIcon({ width = '2rem', height = '2rem', className }) {
     return (
         <svg width={width} height={height} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -456,7 +456,7 @@ export {
     GoogleIcon,
     FbIcon,
     TwitterIcon,
-    lineIcon,
+    LineIcon,
     KaKaoTalkIcon,
     AppleIcon,
     InstagramIcon,

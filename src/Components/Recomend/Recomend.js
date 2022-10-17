@@ -4,19 +4,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { HeartIcon, CommentIcon, ShareIcon } from '`/Components/Icon';
 import { faComment, faHeart, faMusic, faShare } from '@fortawesome/free-solid-svg-icons';
+import avatarRecomend from '`/assets/images/avatar2.jpeg';
+import poster from '`/assets/images/poster.jpeg';
 
 const cx = classNames.bind(styles);
 function Recomend() {
     return (
         <div className={cx('recomend')}>
-            <img
-                className={cx('recomend-avatar')}
-                src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/145f6265cbd458c4f35e717acf1164fe~c5_100x100.jpeg?x-expires=1665540000&x-signature=4p5ZnTKIZrHhR91tQ9JK3MxaM3c%3D"
-                alt=""
-            ></img>
+            <img className={cx('recomend-avatar')} src={avatarRecomend} alt=""></img>
             <div className={cx('recomend-container')}>
                 <div className={cx('wrapper-info')}>
-                    <h3 className={cx('recomend-name')}>theanh28entertaiment</h3>
+                    <h3 className={cx('recomend-name')}>maiphuongthuy8</h3>
                     <p className={cx('recomend-status')}>#thinh hanh</p>
                     <span className={cx('recomend-music')}>
                         <FontAwesomeIcon className={cx('music-icon')} icon={faMusic} />
@@ -24,11 +22,7 @@ function Recomend() {
                     </span>
                 </div>
                 <div className={cx('wrapper-video')}>
-                    <img
-                        src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-p-0037-aiso/6c75809f21774f9ba7dd7ca32c2ce414~tplv-f5insbecw7-1:720:720.jpeg?x-expires=1665392400&amp;x-signature=QrI74CPpQLpCyP5jzZlcHXwIvqQ%3D"
-                        className={cx('recomend-img')}
-                        alt="video"
-                    ></img>
+                    <img src={poster} className={cx('recomend-img')} alt="video"></img>
                     <div className={cx('action')}>
                         <div className={cx('wrapper-action')}>
                             <button className={cx('action-btn')}>

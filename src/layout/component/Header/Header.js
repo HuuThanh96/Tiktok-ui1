@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faPlus, faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 import {
+    LineIcon,
     CoinIcon,
     FbIcon,
     FeedbackIcon,
@@ -18,13 +19,15 @@ import {
     QrIcon,
     SettingIcon,
     TwitterIcon,
+    KaKaoTalkIcon,
+    AppleIcon,
+    InstagramIcon,
 } from '`/Components/Icon';
 import Button from '`/Components/Button';
 import Menu from '`/Components/Popper/Menu';
 import Search from '../Search';
-import { useState } from 'react';
-import Modal from '`/Components/Modal';
-import ModalLogin from '`/Components/Modal/ModalLogin';
+import { useEffect, useState } from 'react';
+import Modal from '`/Components/Modal/Modal';
 
 const cx = classNames.bind(styles);
 const menuItem = [
@@ -70,23 +73,23 @@ const logInItem = [
     },
     {
         icon: <TwitterIcon />,
-        tittle: 'Continue Twitter',
+        tittle: 'Continue with Twitter',
     },
     {
-        icon: <Line />,
-        tittle: 'Continue With Google',
+        icon: <LineIcon />,
+        tittle: 'Continue With Line',
     },
     {
-        icon: <GoogleIcon />,
-        tittle: 'Continue With Google',
+        icon: <KaKaoTalkIcon />,
+        tittle: 'Continue With kakaotalk',
     },
     {
-        icon: <GoogleIcon />,
-        tittle: 'Continue With Google',
+        icon: <AppleIcon />,
+        tittle: 'Continue With Apple',
     },
     {
-        icon: <GoogleIcon />,
-        tittle: 'Continue With Google',
+        icon: <InstagramIcon />,
+        tittle: 'Continue With Instagram',
     },
 
     // }, {
@@ -101,11 +104,10 @@ const logInItem = [
 function Header() {
     const currentUser = false;
 
-    const [showModal, setShowModal] = useState(false);
-    function handleModal() {
-        setShowModal(true);
-    }
-
+    const [show, setShow] = useState(false);
+    const handleShowModal = (value) => {
+        setShow(value);
+    };
     return (
         <div className={cx('wrapper')}>
             <div className={cx('inner')}>
@@ -185,7 +187,13 @@ function Header() {
                 {/* action */}
 
                 <div className={cx('action')}>
-                    <Button text leftIcon={<FontAwesomeIcon icon={faPlus} />}>
+                    <Button
+                        text
+                        leftIcon={<FontAwesomeIcon icon={faPlus} />}
+                        onClick={() => {
+                            setShow((pre) => !pre);
+                        }}
+                    >
                         Upload
                     </Button>
                     {currentUser ? (
@@ -196,7 +204,12 @@ function Header() {
                     ) : (
                         <>
                             {/* <button onClick={handleModal}>login</button> */}
-                            <Button primary onClick={handleModal}>
+                            <Button
+                                primary
+                                onClick={() => {
+                                    setShow((pre) => !pre);
+                                }}
+                            >
                                 Log in
                             </Button>
                         </>
@@ -215,7 +228,7 @@ function Header() {
                     </Menu>
                 </div>
             </div>
-            {showModal && <ModalLogin itemsLogIn={logInItem} />}
+            {show && <Modal itemsLogIn={logInItem} handleShowModal={handleShowModal} show={show} />}
         </div>
     );
 }

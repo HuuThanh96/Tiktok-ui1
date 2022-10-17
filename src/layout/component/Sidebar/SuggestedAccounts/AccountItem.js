@@ -5,6 +5,7 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Wrapper } from '`/Components/Popper';
 import Button from '`/Components/Button';
+import avatar from '`/assets/images/avatar.jpeg';
 
 const cx = classNames.bind(styles);
 
@@ -20,11 +21,7 @@ function AccountItem() {
                     <Wrapper>
                         <div className={cx('profile-container')}>
                             <div className={cx('profile-heading')}>
-                                <img
-                                    className={cx('profile-avatar')}
-                                    src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/65d3c6b1d1e205c75536ccf1f26d552d~c5_100x100.jpeg?x-expires=1665576000&x-signature=tPNVqZfHlN6iAjaYA8p0ne%2BNE8Q%3D"
-                                    alt="avatar"
-                                ></img>
+                                <img className={cx('profile-avatar')} src={avatar} alt="avatar"></img>
                                 <Button primary>Follow</Button>
                             </div>
                             <div className={cx('profile-body')}>
@@ -50,11 +47,7 @@ function AccountItem() {
             )}
         >
             <div className={cx('account-item')}>
-                <img
-                    className={cx('avatar')}
-                    src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/65d3c6b1d1e205c75536ccf1f26d552d~c5_100x100.jpeg?x-expires=1665576000&x-signature=tPNVqZfHlN6iAjaYA8p0ne%2BNE8Q%3D"
-                    alt="avatar"
-                ></img>
+                <img className={cx('avatar')} src={avatar} alt="avatar"></img>
                 <div className={cx('account-info')}>
                     <h4 className={cx('account-name')}>
                         theanh28entertainment <FontAwesomeIcon className={cx('check')} icon={faCheckCircle} />

@@ -1,3 +1,18 @@
+.wrap-body {
+    padding: 0 50px;
+    max-height: 412px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.heading {
+    max-width: 375px;
+    max-height: 48px;
+    margin: 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logInItem {
     display: flex;
     align-items: center;
@@ -6,6 +21,7 @@
     padding: 0 12px;
     margin-bottom: 16px;
     border: 1px solid #ccc;
+    cursor: pointer;
 }
 .logInTittle {
     display: flex;
