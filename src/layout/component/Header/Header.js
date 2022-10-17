@@ -23,10 +23,12 @@ import {
     AppleIcon,
     InstagramIcon,
 } from '`/Components/Icon';
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import routes from '`/config/routes';
 import Button from '`/Components/Button';
 import Menu from '`/Components/Popper/Menu';
 import Search from '../Search';
-import { useEffect, useState } from 'react';
 import Modal from '`/Components/Modal/Modal';
 
 const cx = classNames.bind(styles);
@@ -111,7 +113,7 @@ function Header() {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <div className={cx('logo')}>
+                <Link to={routes.home} className={cx('logo')}>
                     <svg height="42" width="118" alt="TikTok">
                         <g clipPath="url(#clip0)">
                             <path
@@ -177,7 +179,7 @@ function Header() {
                             ></path>
                         </g>
                     </svg>
-                </div>
+                </Link>
                 {/* 
                 wrapper to fix err tippi */}
                 <div>
